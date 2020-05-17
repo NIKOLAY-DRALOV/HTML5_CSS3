@@ -2,7 +2,68 @@ body {
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: Arial;
+    src: url(/fonts/9041.ttf);
+}
 .conteiner {
-    width: 1280px;
+    width: 1180px;
     margin: 0 auto;
+    min-height: 100%;
+}
+.main-header {
+    width: 100%;
+    min-height: 223px;
+    padding: 50px;
+    background-color: #445161;
+}
+.main-header-wrp {
+    float: left;
+    margin: -51px 0px 0px 0px;
+}
+.main-header-title {
+    text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
+    font-family: Arial;
+    font-size: 59px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.main-header-list {
+    margin: -10px 0 0 -2px;
+    list-style-type: none;
+    text-decoration: none;
+    text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 36px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.main-header-list-item {
+    position: relative;
+}
+.main-header-list-item:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    top: 7px;
+    left: -37px;
+    background-image: url("C:/Users/Гога-Николай/Desktop/HTML5_CSS3/progect/img/check-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-header-product-photo {
+    float: right;
 }
