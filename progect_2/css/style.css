@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.conteiner {
+    margin: 0 auto;
+    width: 1920px;
+    min-height: 100%;
+}
+/* шапка сайта */
+.header {
+    min-height: 1024px;
+    width: 100%; 
+    background: #555556 url("../img/bg-header.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+/* логотип и меню */
+.logo-menu-wrp {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0 0 0;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+.header-nav-list {
+    margin: 0;
+    padding: 12px 0 0 0;
+    float: left;
+    list-style-type: none;
+}
+.header-nav-list-item {
+    padding: 0 15px 0 15px;
+    float: left;
+}
+.header-nav-list-item a svg {
+    fill: #ffffff;
+}
+.header-nav-list-item a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.header-nav-list-item:first-child {
+    padding: 0;
+}
+.header-nav-list-item:last-child {
+    padding: 0;
+}
+.logo, span {
+    fill: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+    text-decoration: none;
+    font-family: Raleway;
+    font-size: 34px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.36px;
+    text-align: right;
+    color: #ffffff;
+}
+.logo {
+    margin: 0 219px 0 0;
+}
+.header-nav-list-item a:hover {
+    color: #c7b299;
+}
+.header-nav-list-item a svg:hover {
+    fill: #c7b299;
+}
+/* карусель */
