@@ -8,8 +8,9 @@ body {
     min-height: 100%;
 }
 /* шапка сайта */
+/* не разобрался как затемнить фон */
 .header {
-    min-height: 1024px;
+    padding: 40px 0 40px 0;
     width: 100%; 
     background: #555556 url("../img/bg-header.png");
     background-size: 100%;
@@ -21,9 +22,6 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 40px 0 0 0;
-    border: 1px solid;
-    box-sizing: border-box;
 }
 .header-nav-list {
     margin: 0;
@@ -83,3 +81,118 @@ body {
     fill: #c7b299;
 }
 /* карусель */
+.header-carusel {
+    width: 100%;
+    min-height: 270px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 285px auto 0 auto;
+}
+.header-carusel-btn {
+    display: block;
+    fill: #ad9f90;
+    width: 40px;
+    height: 40px;
+}
+.header-carusel-btn:nth-of-type(1) {
+    margin: 94px 0 0 150px;
+}
+.header-carusel-btn:nth-of-type(2) {
+    margin: 94px 150px 0 0;
+}
+.header-carusel-txt {
+    width: 589px;
+    min-height: 270px;
+}
+.header-carusel-title {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+.header-carusel-bigtitle {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-size: 52px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.carusel-txt {
+    margin: 19px;
+    padding: 0;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.header-carucel-txt-btn {
+    text-decoration: none;
+    display: block;
+    width: 94px;
+    margin: 0 auto;
+    padding: 21px 37px;
+    border-radius: 3px;
+    box-shadow: inset 0px -3px 0 0 #736357;
+    background-color: #998675;
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 23px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.header-carucel-txt-btn:hover {
+    color: #998675;
+    box-shadow: inset 0px -3px 0 0 #cccccc;
+    background-color: #ffffff;
+}
+.header-carucel-txt-btn:active {
+    color: #ffffff;
+    box-shadow: inset 0px -3px 0 0 #736357;
+    background-color: #998675;
+}
+/* пагинация */
+.header-carusel-pagination {
+    width: 100%;
+    min-height: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 327px 0 0 0;
+}
+.header-carusel-pagination-item {
+    display: block;
+    width: 11px;
+    height: 11px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #989796;
+    border: 3px solid transparent;
+}
+.header-carusel-pagination-item:hover {
+    border: 3px solid #9f9284;
+    background: transparent;
+}
+
