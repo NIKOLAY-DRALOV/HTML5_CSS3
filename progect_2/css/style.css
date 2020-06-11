@@ -3,12 +3,68 @@ body {
     padding: 0;
 }
 @font-face {
+    font-family: 'raleway regular';
+    font-style: normal;
+    font-weight: 400 500 600 700 800;
+    src: local('raleway-regular'),
+    url('/fonts/raleway-regular.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'montserrat lihgt';
+    font-style: normal;
+    font-weight: 200 300;
+    src: local('montserrat-light'),
+    url('/fonts/montserrat-light.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'raleway medium';
+    font-style: normal;
+    font-weight: 400 500 600 700 800;
+    src: local('raleway-medium'),
+    url('/fonts/raleway-medium.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'raleway extrabold';
+    font-style: normal;
+    font-weight: 400 500 600 700 800;
+    src: local('raleway-extrabold'),
+    url('/fonts/raleway-extrabold.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'raleway semibold';
+    font-style: normal;
+    font-weight: 400 500 600 700 800;
+    src: local('raleway-semibold'),
+    url('/fonts/raleway-semibold.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'raleway bold';
+    font-style: normal;
+    font-weight: 400 500 600 700 800;
+    src: local('raleway-bold'),
+    url('/fonts/raleway-bold.ttf') format('ttf'),
+}
+@font-face {
     font-family: 'montserrat regular';
     font-style: normal;
-    font-weight: 400;
-    src: local('montserrat'),
+    font-weight: 400 500 600 700 800;
+    src: local('Montserrat-Regular'),
     url('/fonts/Montserrat-Regular.ttf') format('ttf'),
-    }
+}
+@font-face {
+    font-family: 'montserrat ultralihgt';
+    font-style: normal;
+    font-weight: 400 500 600 700 800;
+    src: local('montserrat-extralight'),
+    url('/fonts/montserrat-extralight.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'roboto regular';
+    font-style: normal;
+    font-weight: 400 500 600 700 800;
+    src: local('roboto-regular'),
+    url('/fonts/roboto-regular.ttf') format('ttf'),
+}
 .conteiner {
     margin: 0 auto;
     width: 1920px;
@@ -18,9 +74,9 @@ body {
 .header {
     padding: 40px 0 40px 0;
     width: 100%; 
-    background: #555556 url("../img/header-bg.jpg");
+    background: #555556 url(../img/header-bg.jpg);
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: round;
     box-sizing: border-box;
 }
 /* логотип и меню */
@@ -39,7 +95,7 @@ body {
     padding: 0 15px 0 15px;
     float: left;
 }
-.header-nav-list-item a svg {
+.header-nav-wrp a svg {
     fill: #ffffff;
 }
 .header-nav-list-item a {
@@ -58,10 +114,16 @@ body {
     padding: 0 15px 0 0;
 }
 .header-nav-list-item:last-child {
-    padding: 0 0 0 28px;
+    padding: 0 0 0 15px;
 }
 .header-nav-list-item:nth-of-type(9) {
     padding: 0 0 0 48px;
+}
+.header-nav-wrp {
+    float: left;
+    width: 92px;
+    height: 24px;
+    margin: 6px 0 0 63px;
 }
 /* кнопка карты */
 .cart-icon-form {
@@ -77,6 +139,9 @@ body {
 }
 .cart-icon-form__svg:active {
     fill: #ffffff;
+}
+.cart-icon-form__svg {
+    padding: 0 28px 0 0;
 }
 .cart-icon-form__input {
     padding: 0;
@@ -145,7 +210,7 @@ body {
     width: 64px;
     height: 56px;
 }
-.logo:hover, .logo-txt:hover {
+.logo-menu-wrp a:hover, .logo-txt:hover {
     fill: #c7b299;
     color: #c7b299;
 }
@@ -159,6 +224,12 @@ body {
 }
 .header-nav-list-item a svg:hover {
     fill: #c7b299;
+}
+.header-nav-list-item a:active {
+    color: #ffffff;
+}
+.header-nav-list-item a svg:active {
+    fill: #ffffff;
 }
 /* карусель */
 .header-carusel {
@@ -226,10 +297,12 @@ body {
 }
 .header-carucel-txt-btn {
     text-decoration: none;
+    border: none;
+    outline: none;
     display: block;
-    width: 94px;
+    width: 170px;
+    height: 53px;
     margin: 0 auto;
-    padding: 21px 37px;
     border-radius: 3px;
     box-shadow: inset 0px -3px 0 0 #736357;
     background-color: #998675;
@@ -478,17 +551,17 @@ body {
     color: #c7b299;
 }
 .aside-btn {
-    display: block;
     float: right;
+    border: none;
+    outline: none;
     width: 170px;
+    height: 50px;
     margin: -40px -600px 0 0;
     border-radius: 3px;
     box-shadow: inset 0px -3px 0 0 #736357;
     background-color: #998675;
-    padding: 20px 29px;
     font-family: Raleway;
     text-transform: uppercase;
-    text-decoration: none;
     font-size: 14px;
     font-weight: 800;
     font-stretch: normal;
@@ -561,7 +634,8 @@ body {
     margin: 0;
 }
 .projects-link {
-    display: block;
+    outline: none;
+    border: none;
     margin: 0;
     padding: 10px 24px;
     border-radius: 3px;
@@ -735,7 +809,7 @@ body {
 }
 .products-item:hover .blackout {
     background-color: #000000;
-    opacity: 0.7;
+    opacity: 0.7; 
 }
 .products-item:hover .products-item-link   {
     display: block;
@@ -749,13 +823,13 @@ body {
 .products-item:hover .products-item-search-svg {
     fill: #ffffff;
 }
-/* не могу разобраться почему не меняется цвет svg при наведении на кнопку
-.products-item-link-svg:hover .products-item-link-svg {
+не могу разобраться почему не меняется цвет svg при наведении на кнопку
+.products-item-link-svg:hover {
     fill: #c7b299;
 }
-.products-item-search-svg:hover .products-item-search-svg{
+.products-item-search-svg:hover {
     fill: #c7b299;
-} */
+}
 .button-wrp {
     margin: 40px 0 0 0;
     width: 100%;
@@ -880,3 +954,73 @@ body {
     text-align: center;
     color: #c7b299;  
 }
+.mobile {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/mobile-bg.png);
+    box-sizing: border-box;
+    background-repeat: round;
+}
+.mobile-title {
+    width: 100%;
+    margin: 195px 0 40px 877px;
+    padding: 0;
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #555555;
+}
+.mobile-txt {
+    margin: 0 0 0 875px;
+    padding: 0 388px 0 0;
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c8c8c;
+}
+.mobile-list {
+    width: 100%;
+    margin: 40px 0 179px 954px;
+    padding: 0;
+    list-style-type: none;
+}
+.mobile-list-item {
+    position: relative;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c8c8c;
+}
+.mobile-list-item::before {
+    content: ">";
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 6px;
+    left: -40px;
+    background-color: #c7b299;
+    border-radius: 50%;
+    line-height: 21px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 17px;
+}
+
