@@ -4,8 +4,8 @@ body {
 }
 @font-face {
     font-family: 'raleway regular';
-    font-style: normal;
-    font-weight: 400 500 600 700 800;
+    font-style: bold;
+    font-weight: 200 300 400 500 600 700 800;
     src: local('raleway-regular'),
     url('/fonts/raleway-regular.ttf') format('ttf'),
 }
@@ -82,8 +82,10 @@ body {
 /* логотип и меню */
 .logo-menu-wrp {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+    width: 1170px;
+    margin: 0 auto;
 }
 .header-nav-list {
     margin: 0;
@@ -120,10 +122,14 @@ body {
     padding: 0 0 0 48px;
 }
 .header-nav-wrp {
-    float: left;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
     width: 92px;
     height: 24px;
-    margin: 6px 0 0 63px;
+    padding: 10px 0 0 63px;
+    margin: 0;
 }
 /* кнопка карты */
 .cart-icon-form {
@@ -136,9 +142,11 @@ body {
 }
 .cart-icon-form__svg:hover {
     fill: #c7b299;
+    transition: 0.4s;
 }
 .cart-icon-form__svg:active {
     fill: #ffffff;
+    transition: 0.4s;
 }
 .cart-icon-form__svg {
     padding: 0 28px 0 0;
@@ -162,6 +170,7 @@ body {
 }
 .search-icon-form__svg:hover {
     fill: #c7b299;
+    transition: 0.4s;
 }
 .search-icon-form__svg:active {
     fill: #ffffff;
@@ -175,8 +184,8 @@ body {
     background-color: transparent;
     border: none;
     position: absolute;
-    top: 80px;
-    right: 345px;
+    top: 40px;
+    right: 13px;
     color: #fff;
     font-size: 16px;
     font-family: Arial;
@@ -189,16 +198,26 @@ body {
     transition: width 1s ease;
     border: 2px solid #fff;
 }
-.logo, .logo-txt {
+.logo-wrp {
+    width: 181px;
+    height: 56px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.logo {
+    height: 0;
+    text-decoration: none;
     fill: #ffffff;
-    margin: 0;
-    padding: 0;
-    display: block;
-    float: right;
+}
+.logo-txt {
+    align-items: center;
+    display: flex;
+    height: 56px;
     text-decoration: none;
     font-family: Raleway;
     font-size: 34px;
-    font-weight: normal;
+    font-weight: 300;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -207,23 +226,31 @@ body {
     color: #ffffff;
 }
 .logo svg {
+    float: left;
     width: 64px;
     height: 56px;
 }
-.logo-menu-wrp a:hover, .logo-txt:hover {
-    fill: #c7b299;
-    color: #c7b299;
+.logo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
 }
-.logo {
-    height: 0;
-    padding: 0;
-    margin: 0 219px 0 0;
+.logo:hover .logo-txt {
+    color: #c7b299;
+    transition: 0.4s;
+}
+.logo:hover .logo-svg {
+    fill: #c7b299;
+    transition: 0.4s;
 }
 .header-nav-list-item a:hover {
     color: #c7b299;
+    transition: 0.4s;
 }
 .header-nav-list-item a svg:hover {
     fill: #c7b299;
+    transition: 0.4s;
 }
 .header-nav-list-item a:active {
     color: #ffffff;
@@ -321,11 +348,13 @@ body {
     color: #998675;
     box-shadow: inset 0px -3px 0 0 #cccccc;
     background-color: #ffffff;
+    transition: 0.4s;
 }
 .header-carucel-txt-btn:active {
     color: #ffffff;
     box-shadow: inset 0px -3px 0 0 #736357;
     background-color: #998675;
+    transition: 0.4s;
 }
 /* пагинация */
 .header-carusel-pagination {
@@ -337,16 +366,18 @@ body {
 }
 .header-carusel-pagination-item {
     display: block;
+    margin: 0 10px 0 0;
     width: 11px;
     height: 11px;
-    margin: 0 5px;
     border-radius: 50%;
     background-color: #989796;
     border: 3px solid transparent;
 }
 .header-carusel-pagination-item:hover {
+    transition: 0.4s;
     border: 3px solid #9f9284;
-    background: transparent;
+    background-color: transparent;
+    transform: scale(1.2);
 }
 /* второй блок */
 .services {
@@ -375,12 +406,15 @@ body {
 }
 .serveces-item:hover .serveces-item-link-svg {
     fill: #c7b299;
+    transition: 0.4s;
 }
 .serveces-item:hover .serveces-item-title {
     color: #c7b299;
+    transition: 0.4s;
 }
 .serveces-item:hover:after {
     background-color: #c7b299;
+    transition: 0.4s;
 }
 .serveces-item:last-child {
     margin: 0;
@@ -575,11 +609,13 @@ body {
     color: #998675;
     box-shadow: inset 0px -3px 0 0 #cccccc;
     background-color: #ffffff;
+    transition: 0.4s;
 }
 .aside-btn:active {
     color: #ffffff;
     box-shadow: inset 0px -3px 0 0 #736357;
     background-color: #998675;
+    transition: 0.4s;
 }
 .projects {
     width: 100%;
@@ -658,12 +694,14 @@ body {
     border: solid 1px #998675;
     background-color: #998675;
     color: #ffffff;
+    transition: 0.4s;
 }
 .projects-link:active {
     border-radius: 3px;
     border: solid 1px #ebebeb;
     background-color: #ffffff;
     color: #8c8c8c;
+    transition: 0.4s;
 }
 .projects-wrp {
     margin: 40px 0 0 0;
@@ -797,38 +835,49 @@ body {
 }
 .products-item:hover .products-item-wrp {
     background-color: #362f2d;
+    transition: 0.4s;
 }
 .products-item:hover .products-item-wrp::after {
     border-bottom: 20px solid #362f2d;
+    transition: 0.4s;
 }
 .products-item:hover .products-item-title {
     color: #ffffff;
+    transition: 0.4s;
 }
 .products-item:hover .products-item-txt {
     color: #c7b299;
+    transition: 0.4s;
 }
 .products-item:hover .blackout {
     background-color: #000000;
     opacity: 0.7; 
+    transition: 0.4s;
 }
 .products-item:hover .products-item-link   {
     display: block;
+    transition: 0.4s;
 }
 .products-item:hover  .products-item-search {
     display: block;
+    transition: 0.4s;
 }
 .products-item:hover .products-item-link-svg {
     fill: #ffffff;
+    transition: 0.4s;
 }
 .products-item:hover .products-item-search-svg {
     fill: #ffffff;
+    transition: 0.4s;
 }
-не могу разобраться почему не меняется цвет svg при наведении на кнопку
+/* не могу разобраться почему не меняется цвет svg при наведении на кнопку */
 .products-item-link-svg:hover {
     fill: #c7b299;
+    transition: 0.4s;
 }
 .products-item-search-svg:hover {
     fill: #c7b299;
+    transition: 0.4s;
 }
 .button-wrp {
     margin: 40px 0 0 0;
@@ -859,11 +908,13 @@ body {
     color: #998675;
     box-shadow: inset 0px -3px 0 0 #cccccc;
     background-color: #ffffff;
+    transition: 0.4s;
 }
 .projects-btn:active {
     color: #ffffff;
     box-shadow: inset 0px -3px 0 0 #736357;
     background-color: #998675;
+    transition: 0.4s;
 }
 .video {
     width: 1920px;
@@ -898,10 +949,12 @@ body {
 } 
 .video-btn:hover .video-btn-svg {
     fill: #c7b299;
+    transition: 0.4s;
 }
   
 .video-btn:active .video-btn-svg {
     fill: #ffffff;
+    transition: 0.4s;
 }   
 /* .video-btn:active {
     не знаю как сделать воспроизведение видео при нажатии на эту кнопку похоже без js никак
@@ -1206,6 +1259,7 @@ body {
     color: #ffffff;
     top: 5%;
     left: 5%;
+    z-index: 10;
 }
 .post-item-month {
     position: absolute;
@@ -1224,6 +1278,7 @@ body {
     color: #ffffff;
     top: 15%;
     left: 5%;
+    z-index: 10;
 }
 .post-item-pagination {
     position: absolute;
@@ -1236,37 +1291,46 @@ body {
 }
 .post-item-pagination-link {
     display: block;
+    margin: 0 10px 0 0;
     width: 11px;
     height: 11px;
-    margin: 0 5px;
     border-radius: 50%;
+    border: 3px solid transparent;
+    margin: 0 5px;
     background-color: #ffffff;
-    border: 2px solid transparent;
     opacity: 0.3;
 }
 .post-item-pagination-link:hover {
     opacity: 1;
-    border: 2px solid #d3c1ad;
+    border: 3px solid #d3c1ad;
     background: transparent;
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 .post-item:hover .post-item-img {
     filter: brightness(20%);
+    transition: 0.4s;
 }
 .post-item-data-wrp:hover .post-item-data {
     background-color: #c7b299;
+    transition: 0.4s;
 }
 .post-item-data-wrp:hover .post-item-month {
     background-color: #a48d72;
+    transition: 0.4s;
 }
 .post-item:hover .post-item-wrp {
     background-color: #362f2d;
     border-color: #362f2d;
+    transition: 0.4s;
 }
 .post-item:hover .post-item-title {
     color: #c7b299;
+    transition: 0.4s;
 }
 .post-item:hover .post-item-txt {
     color: #ffffff;
+    transition: 0.4s;
 }
 .recentpost-arrows {
     width: 100%;
@@ -1292,7 +1356,48 @@ body {
 }
 .recentposts-arrows-btn-svg:hover {
     fill: #c7b299;
+    transition: 0.4s;
 }
 .recentposts-arrows-btn-svg:active {
     fill: #d1d1d1;
+    transition: 0.4s;
+}
+.partners {
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(../img/partners-bg.png);
+    display: flex;
+    justify-content: center;
+    padding: 140px 0 140px 0;
+}
+.partners-item {
+    display: flex;
+    align-items: center;
+    width: 210px;
+    height: 210px;
+    margin: 0 90px 0 0;
+}
+.partners-item:last-child {
+    margin: 0;
+}
+.widget {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #191919;
+    padding: 80px 0 80px 0;
+}
+.widget-wrp {
+    width: 15%;
+    outline: 1px solid white;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 40px 0 0;
+}
+.widget-wrp:last-child {
+    margin: 0;
+}
+.widget-txt {
+    width: 100%;
+    margin: 0;
 }
