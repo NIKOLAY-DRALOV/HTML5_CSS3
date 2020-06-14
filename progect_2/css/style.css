@@ -12,56 +12,56 @@ body {
 @font-face {
     font-family: 'montserrat lihgt';
     font-style: normal;
-    font-weight: 200 300;
+    font-weight: 200 300 400 500 600 700 800;
     src: local('montserrat-light'),
     url('/fonts/montserrat-light.ttf') format('ttf'),
 }
 @font-face {
     font-family: 'raleway medium';
     font-style: normal;
-    font-weight: 400 500 600 700 800;
+    font-weight: 200 300 400 500 600 700 800;
     src: local('raleway-medium'),
     url('/fonts/raleway-medium.ttf') format('ttf'),
 }
 @font-face {
     font-family: 'raleway extrabold';
     font-style: normal;
-    font-weight: 400 500 600 700 800;
+    font-weight: 200 300 400 500 600 700 800;
     src: local('raleway-extrabold'),
     url('/fonts/raleway-extrabold.ttf') format('ttf'),
 }
 @font-face {
     font-family: 'raleway semibold';
     font-style: normal;
-    font-weight: 400 500 600 700 800;
+    font-weight: 200 300 400 500 600 700 800;
     src: local('raleway-semibold'),
     url('/fonts/raleway-semibold.ttf') format('ttf'),
 }
 @font-face {
     font-family: 'raleway bold';
     font-style: normal;
-    font-weight: 400 500 600 700 800;
+    font-weight: 200 300 400 500 600 700 800;
     src: local('raleway-bold'),
     url('/fonts/raleway-bold.ttf') format('ttf'),
 }
 @font-face {
     font-family: 'montserrat regular';
     font-style: normal;
-    font-weight: 400 500 600 700 800;
+    font-weight: 200 300 400 500 600 700 800;
     src: local('Montserrat-Regular'),
     url('/fonts/Montserrat-Regular.ttf') format('ttf'),
 }
 @font-face {
     font-family: 'montserrat ultralihgt';
     font-style: normal;
-    font-weight: 400 500 600 700 800;
+    font-weight: 200 300 400 500 600 700 800;
     src: local('montserrat-extralight'),
     url('/fonts/montserrat-extralight.ttf') format('ttf'),
 }
 @font-face {
     font-family: 'roboto regular';
     font-style: normal;
-    font-weight: 400 500 600 700 800;
+    font-weight: 200 300 400 500 600 700 800;
     src: local('roboto-regular'),
     url('/fonts/roboto-regular.ttf') format('ttf'),
 }
@@ -1227,7 +1227,7 @@ body {
     text-transform: capitalize;
     font-family: Montserrat;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 20px;
@@ -1388,10 +1388,10 @@ body {
     padding: 80px 0 80px 0;
 }
 .widget-wrp {
-    width: 15%;
-    outline: 1px solid white;
+    flex-direction: column;
+    width: 15.5%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 0 40px 0 0;
 }
 .widget-wrp:last-child {
@@ -1399,5 +1399,203 @@ body {
 }
 .widget-txt {
     width: 100%;
-    margin: 0;
+    margin: 29px 0 33px 0;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #555555;
+}
+.widget-wrp-logo {
+    width: 100%;
+    height: 56px;
+}
+.widget-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d1d1d1;
+}
+.widget-link::after {
+    content: "";
+    display: inline-block;
+    border: 5px solid transparent;
+    border-left: 8px solid #d1d1d1;;
+    margin: 0 0 0 9px;
+}
+.widget-title {
+    margin: 28px 0 33px 0;
+    width: 100%;
+    text-transform: capitalize;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.widget-date {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #363636;
+}
+.widget-paragraph {
+    margin: 10px 0 10px 0;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #555555;
+}
+.widget-date::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 21px 0 19px 0;
+    background-color: #252525;
+}
+.widget-date:nth-last-of-type(3)::before {
+    display: none;
+}
+.widget-time::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 23px 0 17px 0;
+    background-color: #252525;
+}
+.widget-time:last-child::after {
+    display: none;
+}
+.color-date {
+    color: #ffffff;
+}
+.color-paragraph {
+    color: #c7b299;
+}
+.widget-time {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #363636;
+}
+.dog {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #00bff3;
+}
+.widget-link-option {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #959595;
+}
+.widget-img {
+    margin: 0 10px 10px 0;
+}
+.footer {
+    width: 100%;
+    padding: 45px 0 52px 0;
+    background-color: #111111;
+}
+.footer-wrp {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-txt {
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #555555;
+}
+.footer-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: montserrat;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: right;
+    color: #959595;
+}
+.footer-link-faq {
+    display: inline-block;
+    text-decoration: none;
+    font-family: montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: right;
+    color: #c7b299;;
+}
+.footer-txt::after {
+    content: "";
+    width: 1px;
+    height: 13px;
+    float: left;
+    margin: 4px 5px 0 5px;
+    background-color: #555555;
+}
+.footer-txt:first-child::after {
+    display: none;
 }
