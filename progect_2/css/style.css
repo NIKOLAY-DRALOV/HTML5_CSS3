@@ -12,9 +12,9 @@ body {
 @font-face {
     font-family: 'montserrat lihgt';
     font-style: normal;
-    font-weight: 200 300 400 500 600 700 800;
+    font-weight: 300 400 500 600 700 800;
     src: local('montserrat-light'),
-    url('/fonts/montserrat-light.ttf') format('ttf'),
+    url('/fonts/Montserrat-Light.ttf') format('ttf'),
 }
 @font-face {
     font-family: 'raleway medium';
@@ -870,14 +870,13 @@ body {
     fill: #ffffff;
     transition: 0.4s;
 }
-/* не могу разобраться почему не меняется цвет svg при наведении на кнопку */
-.products-item-link-svg:hover {
+.products-item-link:hover .products-item-link-svg {
     fill: #c7b299;
-    transition: 0.4s;
+    transition: 0.2s;
 }
-.products-item-search-svg:hover {
+.products-item-search:hover .products-item-search-svg{
     fill: #c7b299;
-    transition: 0.4s;
+    transition: 0.2s;
 }
 .button-wrp {
     margin: 40px 0 0 0;
@@ -1116,7 +1115,7 @@ body {
 }
 .counters-txt {
     margin: 0 auto;
-    font-family: Montserrat;
+    font-family: montserrat;
     font-size: 14px;
     font-weight: 300;
     font-stretch: normal;
@@ -1234,6 +1233,20 @@ body {
     letter-spacing: normal;
     text-align: left;
     color: #c7b299;
+}
+.post-item-link:hover {
+    color: #ffffff;
+    transition: 0.2s;
+}
+.post-item-link:active {
+    color: #c7b299;
+}
+.post-item-link:hover:after {
+    border-left: 8px solid #ffffff;
+    transition: 0.2s;
+}
+.post-item-link:active:after {
+    border-left: 8px solid #c7b299;
 }
 .post-item-link::after {
     content: "";
@@ -1431,8 +1444,22 @@ body {
     content: "";
     display: inline-block;
     border: 5px solid transparent;
-    border-left: 8px solid #d1d1d1;;
+    border-left: 8px solid #d1d1d1;
     margin: 0 0 0 9px;
+}
+.widget-link:hover {
+    color: #c7b299;
+    transition: 0.2s;
+}
+.widget-link:hover:after {
+    border-left: 8px solid #c7b299;
+    transition: 0.2s;
+}
+.widget-link:active {
+    color: #d1d1d1;
+}
+.widget-link:active:after {
+    border-left: 8px solid #d1d1d1;;
 }
 .widget-title {
     margin: 28px 0 33px 0;
