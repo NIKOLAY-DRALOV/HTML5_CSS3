@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'raleway regular';
+    font-style: bold;
+    font-weight: 200 300 400 500 600 700 800;
+    src: local('raleway-regular'),
+    url('/fonts/raleway-regular.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'montserrat lihgt';
+    font-style: normal;
+    font-weight: 300 400 500 600 700 800;
+    src: local('montserrat-light'),
+    url('/fonts/Montserrat-Light.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'raleway medium';
+    font-style: normal;
+    font-weight: 200 300 400 500 600 700 800;
+    src: local('raleway-medium'),
+    url('/fonts/raleway-medium.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'raleway extrabold';
+    font-style: normal;
+    font-weight: 200 300 400 500 600 700 800;
+    src: local('raleway-extrabold'),
+    url('/fonts/raleway-extrabold.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'raleway semibold';
+    font-style: normal;
+    font-weight: 200 300 400 500 600 700 800;
+    src: local('raleway-semibold'),
+    url('/fonts/raleway-semibold.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'raleway bold';
+    font-style: normal;
+    font-weight: 200 300 400 500 600 700 800;
+    src: local('raleway-bold'),
+    url('/fonts/raleway-bold.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'montserrat regular';
+    font-style: normal;
+    font-weight: 200 300 400 500 600 700 800;
+    src: local('Montserrat-Regular'),
+    url('/fonts/Montserrat-Regular.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'montserrat ultralihgt';
+    font-style: normal;
+    font-weight: 200 300 400 500 600 700 800;
+    src: local('montserrat-extralight'),
+    url('/fonts/montserrat-extralight.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'roboto regular';
+    font-style: normal;
+    font-weight: 200 300 400 500 600 700 800;
+    src: local('roboto-regular'),
+    url('/fonts/roboto-regular.ttf') format('ttf'),
+}
