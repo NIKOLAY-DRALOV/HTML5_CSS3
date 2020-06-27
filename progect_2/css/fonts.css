@@ -6,11 +6,11 @@
     url('/fonts/raleway-regular.ttf') format('ttf'),
 }
 @font-face {
-    font-family: 'montserrat lihgt';
+    font-family: 'montserrat';
     font-style: normal;
-    font-weight: 300 400 500 600 700 800;
+    font-weight: 300;
     src: local('montserrat-light'),
-    url('/fonts/Montserrat-Light.ttf') format('ttf'),
+    url('/fonts/montserrat-light.ttf') format('ttf'),
 }
 @font-face {
     font-family: 'raleway medium';
@@ -34,30 +34,37 @@
     url('/fonts/raleway-semibold.ttf') format('ttf'),
 }
 @font-face {
-    font-family: 'raleway bold';
+    font-family: 'raleway';
     font-style: normal;
-    font-weight: 200 300 400 500 600 700 800;
+    font-weight: bold;
     src: local('raleway-bold'),
     url('/fonts/raleway-bold.ttf') format('ttf'),
 }
 @font-face {
-    font-family: 'montserrat regular';
+    font-family: 'montserrat';
     font-style: normal;
-    font-weight: 200 300 400 500 600 700 800;
+    font-weight: 400;
     src: local('Montserrat-Regular'),
     url('/fonts/Montserrat-Regular.ttf') format('ttf'),
 }
 @font-face {
-    font-family: 'montserrat ultralihgt';
+    font-family: 'montserrat';
     font-style: normal;
-    font-weight: 200 300 400 500 600 700 800;
+    font-weight: 200;
     src: local('montserrat-extralight'),
     url('/fonts/montserrat-extralight.ttf') format('ttf'),
 }
 @font-face {
-    font-family: 'roboto regular';
+    font-family: 'roboto';
     font-style: normal;
-    font-weight: 200 300 400 500 600 700 800;
+    font-weight: normal;
     src: local('roboto-regular'),
     url('/fonts/roboto-regular.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    src: local("Poppins-ExtraLight"),
+    url("/fonts/Poppins-ExtraLight.ttf");
 }
