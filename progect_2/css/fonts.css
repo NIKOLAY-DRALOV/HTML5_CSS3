@@ -66,5 +66,12 @@
     font-style: normal;
     font-weight: normal;
     src: local("Poppins-ExtraLight"),
-    url("/fonts/Poppins-ExtraLight.ttf");
+    url("/fonts/Poppins-ExtraLight.ttf"), format("ttf");
+}
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Poppins-SemiBold")
+    url("/fonts/Poppins-SemiBold.ttf"), format("ttf");
 }
