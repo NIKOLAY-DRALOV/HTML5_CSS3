@@ -2,76 +2,95 @@
     font-family: 'raleway regular';
     font-style: bold;
     font-weight: 200 300 400 500 600 700 800;
-    src: local('raleway-regular'),
-    url('/fonts/raleway-regular.ttf') format('ttf'),
+    src: local('raleway-regular');
+    src: url('../fonts/raleway-regular.ttf');
+    src: format('ttf');
 }
 @font-face {
     font-family: 'montserrat';
     font-style: normal;
     font-weight: 300;
-    src: local('montserrat-light'),
-    url('/fonts/montserrat-light.ttf') format('ttf'),
+    src: local('montserrat-light');
+    src: url('../fonts/montserrat-light.ttf');
+    src: format('ttf');
 }
 @font-face {
     font-family: 'raleway medium';
     font-style: normal;
     font-weight: 200 300 400 500 600 700 800;
-    src: local('raleway-medium'),
-    url('/fonts/raleway-medium.ttf') format('ttf'),
+    src: local('raleway-medium');
+    src: url('../fonts/raleway-medium.ttf');
+    src: format('ttf');
 }
 @font-face {
     font-family: 'raleway extrabold';
     font-style: normal;
     font-weight: 200 300 400 500 600 700 800;
-    src: local('raleway-extrabold'),
-    url('/fonts/raleway-extrabold.ttf') format('ttf'),
+    src: local('raleway-extrabold');
+    src: url('../fonts/raleway-extrabold.ttf');
+    src: format('ttf');
 }
 @font-face {
     font-family: 'raleway semibold';
     font-style: normal;
     font-weight: 200 300 400 500 600 700 800;
-    src: local('raleway-semibold'),
-    url('/fonts/raleway-semibold.ttf') format('ttf'),
+    src: local('raleway-semibold');
+    src: url('../fonts/raleway-semibold.ttf');
+    src: format('ttf');
 }
 @font-face {
     font-family: 'raleway';
     font-style: normal;
     font-weight: bold;
-    src: local('raleway-bold'),
-    url('/fonts/raleway-bold.ttf') format('ttf'),
+    src: local('raleway-bold');
+    src: url('../fonts/raleway-bold.ttf');
+    src: format('ttf');
 }
 @font-face {
     font-family: 'montserrat';
     font-style: normal;
     font-weight: 400;
-    src: local('Montserrat-Regular'),
-    url('/fonts/Montserrat-Regular.ttf') format('ttf'),
+    src: local('Montserrat-Regular');
+    src: url('../fonts/Montserrat-Regular.ttf');
+    src: format('ttf');
 }
 @font-face {
     font-family: 'montserrat';
     font-style: normal;
     font-weight: 200;
-    src: local('montserrat-extralight'),
-    url('/fonts/montserrat-extralight.ttf') format('ttf'),
+    src: local('montserrat-extralight');
+    src:url('../fonts/montserrat-extralight.ttf');
+    src: format('ttf');
 }
 @font-face {
     font-family: 'roboto';
     font-style: normal;
     font-weight: normal;
-    src: local('roboto-regular'),
-    url('/fonts/roboto-regular.ttf') format('ttf'),
+    src: local('roboto-regular');
+    src: format('ttf');
+    src: url('../fonts/roboto-regular.ttf');
 }
 @font-face {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: normal;
-    src: local("Poppins-ExtraLight"),
-    url("/fonts/Poppins-ExtraLight.ttf"), format("ttf");
+    font-weight: 200;
+    src: local("Poppins-ExtraLight");
+    src: format("ttf");
+    src: url("../fonts/Poppins-ExtraLight.ttf");
 }
 @font-face {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    src: local("Poppins-SemiBold")
-    url("/fonts/Poppins-SemiBold.ttf"), format("ttf");
+    src: format('ttf');
+    src: local('Poppins-SemiBold');
+    src: url('../fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local("Poppins-Bold");
+    src: url('../fonts/Poppins-Bold.ttf');
+    src: format('ttf');
 }
