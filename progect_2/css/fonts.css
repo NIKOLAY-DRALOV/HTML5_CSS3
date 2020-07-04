@@ -94,3 +94,19 @@
     src: url('../fonts/Poppins-Bold.ttf');
     src: format('ttf');
 }
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: local("Poppins-Light");
+    src: url('../fonts/Poppins-Light.ttf');
+    src: format('ttf');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Poppins-Regular");
+    src: url('../fonts/Poppins-Regular.ttf');
+    src: format('ttf');
+}
